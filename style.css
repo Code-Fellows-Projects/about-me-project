@@ -4,11 +4,16 @@ h1{
     background-color: rgb(245, 227, 126);
     text-align: center;
     padding: 20px;
-    font-size: 20px;;
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 p{
     color: violet;
-    font-size: 30px;
-    
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+
 }

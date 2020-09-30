@@ -34,9 +34,9 @@ console.log('User guesses if I was a skydive instructor or not');
 var workHistory = prompt('Wanna know what my past job was and what I\'m doing now? ');
 
 if(workHistory.toLowerCase() === 'No' || workHistory.toLowerCase() === 'N'){
-    alert('Great, I worked at a Salon on Capitol hill for 8+ years and now going to school at Code fellows to become a Software Developer!');
+    alert('Great, I worked at a Salon on Capitol hill for 8+ years and now going to school at Code Fellows to become a Software Developer!');
 } else {
-    alert('Well I\'ll tell you anyways, I worked at a salon in Seattle and now I\'m in school at code fellows to become a Software Developer!');
+    alert('Well I\'ll tell you anyways, I worked at a salon in Seattle and now I\'m in school at Code Fellows to become a Software Developer!');
 }
 console.log('User finds out past work history plus current schooling');
 
