@@ -73,6 +73,25 @@ if(funLanguageFact.toLowerCase() === 'y' || funLanguageFact.toLowerCase() === 'y
 
 }
 
+var correctAgeNumber = 28;
+for (var i = 0; i < 4; i++) {
+  var numberGuess = prompt('Guess how long ive lived in Seattle!');
+  if ((correctAgeNumber < parseInt(numberGuess))) {
+    alert('Nope, too high try again!');
+  }
+    else if ((correctAgeNumber > parseInt(numberGuess))) {
+    alert('Nope, too low try again!');
+  }
+    else if (parseInt(numberGuess) === correctAgeNumber) {
+    alert('That is correct 28 years!');
+    break;
+   }
+if (i === 27 ){
+    alert('Aww shucks outta chances! ' + correctAgeNumber + ' is the correct number');
+}
+}
+
+  
 
 
 
