@@ -7,13 +7,32 @@ h1{
     font-size: 20px;
     font-family: 'Noto Sans JP', sans-serif;
 }
-
+h2 {
+    background-color: wheat;
+    text-align: center;
+    font-size: 40px;
+}
 p{
+    background-color: wheat;
     color: violet;
     font-size: 20px;
     padding: 10px;
     margin: 10px;
     font-family: 'Noto Sans JP', sans-serif;
+}
+h3{
+    background-color: teal;
+    text-align: center;
+    padding: 25px;
 
-
+}
+ol{
+    text-align: center;
+}
+h4{
+    background-color: teal;
+    text-align: center;
+}
+ul{
+    text-align: center;
 }
