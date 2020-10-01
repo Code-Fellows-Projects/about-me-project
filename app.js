@@ -151,12 +151,14 @@ function favoriteIceCreamFlavor(){
 favoriteIceCreamFlavor();
 
 // closing question
-
-if (numberCorrect > 5) {
-    alert(userName + ', thanks for visiting and getting to know me! You scored ' + numberCorrect + ' out of 7! Have a great day!') 
-} else {
-    alert(userName + ', thanks for visiting but you only scored ' + numberCorrect + ' out of 7! Have a great day!');
+function howManyQuestionsCorrect(){
+    if (numberCorrect > 5) {
+        alert(userName + ', thanks for visiting and getting to know me! You scored ' + numberCorrect + ' out of 7! Have a great day!') 
+    } else {
+        alert(userName + ', thanks for visiting but you only scored ' + numberCorrect + ' out of 7! Have a great day!');
+    }
 }
+howManyQuestionsCorrect();
 
 
 
