@@ -2,25 +2,31 @@
 
 var numberCorrect = 0
 // greeting question
-var userName = prompt('Hi there, welcome to my webpage! What is your name?')
+function askName(){
+    var userName = prompt('Hi there, welcome to my webpage! What is your name?')
 
 console.log('The user\'s name: ' + userName);
 
 alert('It\'s lovely to meet you, ' + userName + '!');
+}
+askName();
 
 // first question
-var whichSchool = prompt( userName + ', I have a few questions for you so you can better get to know me, do you think I went to Seattle University?');
+function whatSchool(){
+    var whichSchool = prompt( userName + ', I have a few questions for you so you can better get to know me, do you think I went to Seattle University?');
 
-if(whichSchool.toLowerCase() === 'yes' || whichSchool.toLowerCase() === 'y'){
-
-  alert('Correct! I studied forensic Psychology, but only for a year');
-  numberCorrect++
-
-} else {
-
-  alert('I did, but switched to something different! ');
+    if(whichSchool.toLowerCase() === 'yes' || whichSchool.toLowerCase() === 'y'){
+    
+      alert('Correct! I studied forensic Psychology, but only for a year');
+      numberCorrect++
+    
+    } else {
+    
+      alert('I did, but switched to something different! ');
+    }
+    console.log('User can guess if I went to Seattle U or not'); 
 }
-console.log('User can guess if I went to Seattle U or not');
+whatSchool();
 
 
 // second question
