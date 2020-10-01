@@ -16,4 +16,4 @@
 
 + I used what we learned in class today to create if/else statements and created a quiz game using information in my biography.
 
-+ We learned arrays and how to use them to have the user guess an answer but only give them x chances.
++ We learned arrays and how to use them to have the user guess an answer but only give them x chances 
