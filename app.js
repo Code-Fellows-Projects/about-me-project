@@ -97,7 +97,8 @@ function learnNewLanguage(){
 }
 learnNewLanguage();
 // guess a number question
-var correctAgeNumber = 28;
+function guessSeattleQuestion(){
+    var correctAgeNumber = 28;
 for (var i = 0; i < 4; i++) {
   var numberGuess = prompt('Guess how long ive lived in Seattle!');
   if ((correctAgeNumber < parseInt(numberGuess))) {
@@ -111,36 +112,43 @@ for (var i = 0; i < 4; i++) {
     numberCorrect++
     break;
    }
-if (i === 27 ){
+if (i === 3 ){
     alert('Aww shucks outta chances! ' + correctAgeNumber + ' is the correct number');
 }
 }
+}
+guessSeattleQuestion();
+
 
 // array favorite flavor question
+
 var correctFlavor = ['chocolate peanut butter', 'neapolitan', 'cookie dough'];
 var userAnswer = '';
 var i = 1;
-
-while (i < 6){
-    var flavorQuestion = prompt('What are my favorite flavors of ice cream?');
-    for (var j = 0; j < correctFlavor.length; j++) {
-        if (flavorQuestion.toLowerCase() === correctFlavor[j]) {
-            alert('Delicious! That is correct!');
-            numberCorrect++
-            i = 8; 
-           break;
-        } 
+function favoriteIceCreamFlavor(){
+    while (i < 6){
+        var flavorQuestion = prompt('What are my favorite flavors of ice cream?');
+        for (var j = 0; j < correctFlavor.length; j++) {
+            if (flavorQuestion.toLowerCase() === correctFlavor[j]) {
+                alert('Delicious! That is correct!');
+                numberCorrect++
+                i = 8; 
+               break;
+            } 
+        }
+        if (i < 6){
+            userAnswer = flavorQuestion
+            i++ 
+            console.log(i);
+            alert('Nope! ' + userAnswer + ' is incorrect but still delicious');   
+        }        
     }
-    if (i < 6){
-        userAnswer = flavorQuestion
-        i++ 
-        console.log(i);
-        alert('Nope! ' + userAnswer + ' is incorrect but still delicious');   
-    }        
+    if ( i === 6){
+        alert('You\'re out of attempts, here are all the correct answers chocolate peanut butter, neapolitan, cookie dough!');
+    }
+    
 }
-if ( i === 6){
-    alert('You\'re out of attempts, here are all the correct answers chocolate peanut butter, neapolitan, cookie dough!');
-}
+favoriteIceCreamFlavor();
 
 // closing question
 
