@@ -58,21 +58,24 @@ function pastJobHistory(){
 pastJobHistory();
 
 // forth question
-var lifeGoals = prompt('Id love to share with you about my future goals, think I\'ll make a good Software Developer?');
+function futureGoals(){
+    var lifeGoals = prompt('Id love to share with you about my future goals, think I\'ll make a good Software Developer?');
 
-if(lifeGoals.toLowerCase() === 'y' || lifeGoals.toLowerCase() === 'yes'){
-
-    alert('Aww thats sweet that you think so ' + userName + ', Me too! fingers crossed I make it through!');
-    numberCorrect++
-
-    console.log('If yes they learn about my future goals in a nice way');
-
-} else if(lifeGoals.toLowerCase() === 'n' || lifeGoals.toLowerCase() === 'no') {
-
-    alert('Well ' + userName + ', I guess I will just have to prove you wrong!');
-
-    console.log('If no user gets message about proving them wrong');
+    if(lifeGoals.toLowerCase() === 'y' || lifeGoals.toLowerCase() === 'yes'){
+    
+        alert('Aww thats sweet that you think so ' + userName + ', Me too! fingers crossed I make it through!');
+        numberCorrect++
+    
+        console.log('If yes they learn about my future goals in a nice way');
+    
+    } else if(lifeGoals.toLowerCase() === 'n' || lifeGoals.toLowerCase() === 'no') {
+    
+        alert('Well ' + userName + ', I guess I will just have to prove you wrong!');
+    
+        console.log('If no user gets message about proving them wrong');
+    }
 }
+futureGoals();
 
 // fifth question
 var funLanguageFact = prompt('I\'m in the beginning of learning a new language, Wanna know what it is?');
