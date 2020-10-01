@@ -78,21 +78,24 @@ function futureGoals(){
 futureGoals();
 
 // fifth question
-var funLanguageFact = prompt('I\'m in the beginning of learning a new language, Wanna know what it is?');
+function learnNewLanguage(){
+    var funLanguageFact = prompt('I\'m in the beginning of learning a new language, Wanna know what it is?');
 
-if(funLanguageFact.toLowerCase() === 'y' || funLanguageFact.toLowerCase() === 'yes'){
+    if(funLanguageFact.toLowerCase() === 'y' || funLanguageFact.toLowerCase() === 'yes'){
+        
+        alert('Great! My boyfriend is from Gambia, West Africa so I am learning his language which is Wolof so that I can better communicate with his family next time we visit!' + ' Well ' + userName + ',' + ' Thanks for visiting and getting to know me better, Have a nice day!');
+        numberCorrect++
+        console.log('If yes, the user will find out what language I am learning');
     
-    alert('Great! My boyfriend is from Gambia, West Africa so I am learning his language which is Wolof so that I can better communicate with his family next time we visit!' + ' Well ' + userName + ',' + ' Thanks for visiting and getting to know me better, Have a nice day!');
-    numberCorrect++
-    console.log('If yes, the user will find out what language I am learning');
-
-} else if(funLanguageFact.toUpperCase() == 'n' || funLanguageFact.toUpperCase() == 'no'){
-
-    alert('But I thought you wanted to get to know me? ' + 'Well thanks anyways for coming by ' + userName + '!' + ' See you around!');
-
-    console.log('If no, then I am disappointed and say goodbye');
-
+    } else if(funLanguageFact.toUpperCase() == 'n' || funLanguageFact.toUpperCase() == 'no'){
+    
+        alert('But I thought you wanted to get to know me? ' + 'Well thanks anyways for coming by ' + userName + '!' + ' See you around!');
+    
+        console.log('If no, then I am disappointed and say goodbye');
+    
+    }
 }
+learnNewLanguage();
 // guess a number question
 var correctAgeNumber = 28;
 for (var i = 0; i < 4; i++) {
