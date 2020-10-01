@@ -2,8 +2,8 @@
 
 var numberCorrect = 0
 // greeting question
+var userName = prompt('Hi there, welcome to my webpage! What is your name?')
 function askName(){
-    var userName = prompt('Hi there, welcome to my webpage! What is your name?')
 
 console.log('The user\'s name: ' + userName);
 
@@ -12,9 +12,9 @@ alert('It\'s lovely to meet you, ' + userName + '!');
 askName();
 
 // first question
+
 function whatSchool(){
     var whichSchool = prompt( userName + ', I have a few questions for you so you can better get to know me, do you think I went to Seattle University?');
-
     if(whichSchool.toLowerCase() === 'yes' || whichSchool.toLowerCase() === 'y'){
     
       alert('Correct! I studied forensic Psychology, but only for a year');
@@ -30,7 +30,8 @@ whatSchool();
 
 
 // second question
-var workLife = prompt('Did you know I was a skydive instructor?? ');
+function doYouSkyDive(){
+    var workLife = prompt('Did you know I was a skydive instructor?? ');
 
 if(workLife.toUpperCase() === 'No' || workLife.toUpperCase() === 'N'){        
     alert('Sike! I\'m afraid of heights and dark water which you could encounter both on that type of work life style. Am I right?! ');
@@ -39,6 +40,8 @@ if(workLife.toUpperCase() === 'No' || workLife.toUpperCase() === 'N'){
     numberCorrect++  
 } 
 console.log('User guesses if I was a skydive instructor or not');
+}
+doYouSkyDive();
 
 // third question
 var workHistory = prompt('Wanna know what my past job was and what I\'m doing now? ');
