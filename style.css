@@ -1,4 +1,95 @@
-*{
+
+body {    background-image: url("https://image.freepik.com/free-photo/whole-lemons-near-slices-citruses_23-2147931361.jpg");
+
+    background-position: center;
+    background-size: cover;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+header, footer  {
+    text-align: center;
+    padding: 20px;
+    border-style: 4px dotted black;
+    border-width: 2px;
+
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1cm;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 3px dotted black;
+    color: black;
+    width: 300px;
+    padding: 25px;
+    margin: 20px 0px 0px 340px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+    
+}
+
+section {
+    padding: 1px;
+    margin: 5px;
+    border-style: 2px dashed black;
+    
+}
+
+#intro {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+article {
+    padding: 20px 15px;
+    text-align: center;
+    border: 3px dotted black;
+    width: 600px;
+    padding: 10px;
+    margin: 20px 10px 20px 200px;
+    text-align: center;
+    font-size: 22px;
+    padding: 25px;
+    color: black;
+    
+
+}
+
+li {
+    line-height: 1cm;
+    font-family: 'Noto Sans JP', sans-serif;
+    /*display: inline-block;
+    border: 3px dashed purple;
+    width: 400px;
+    padding: 10px;
+    margin: 20px 10px 20px 540px;
+    text-align: center;
+    font-size: 20px;
+    padding: 25px;
+    color: navy;
+      */
+
+}
+.history {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.details {
+ text-align: center;
+}
+
+
+
+
+/* *{
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
       
@@ -7,26 +98,14 @@
       display: inline-block;
       border: 3px dashed purple;
       margin: 15px 0px 0px 550px;
-      /*background-color: rgb(245, 227, 126);*/
       text-align: center;
       padding: 40px;
       font-size: 40px;
       font-family: 'Noto Sans JP', sans-serif;
       color: indigo;
   }
-  /*h2 {
-      border: 2px dashed purple;
-      display: inline-block;
-      margin: 20px 0px 10px 500px;
-      background-color: wheat;
-      text-align: center;
-      font-size: 40px;
-      font-family: 'Noto Sans JP', sans-serif;
-      color: rgb(38, 125, 197);
-  }*/
-  
+ 
   p{
-      /*background-color: wheat;*/
       border: 3px dashed purple;
       text-align: center;
       color: navy;
@@ -61,13 +140,6 @@
       font-family: 'Noto Sans JP', sans-serif;
       color: navy;
       
-      /*border: 2px dashed purple;
-      text-align: center;
-      width: 300px;
-      font-size: 25px;
-      font-family: 'Noto Sans JP', sans-serif;
-      color: navy;
-  */
   }
   h4{
      display: inline-block;
@@ -91,3 +163,4 @@
       color: navy;
       
   }
+*/

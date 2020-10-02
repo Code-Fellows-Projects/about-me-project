@@ -14,15 +14,15 @@ askName();
 // first question
 
 function whatSchool(){
-    var whichSchool = prompt( userName + ', I have a few questions for you so you can better get to know me, do you think I went to Seattle University?');
+    var whichSchool = prompt( userName + ', Lets play a guessing game to get to know me better! Do you think I went to Seattle University?');
     if(whichSchool.toLowerCase() === 'yes' || whichSchool.toLowerCase() === 'y'){
     
-      alert('Correct! I studied forensic Psychology, but only for a year');
+      alert('I did! Correct! I studied forensic Psychology,');
       numberCorrect++
     
     } else {
     
-      alert('I did, but switched to something different! ');
+      alert('I did, but only for one year! ');
     }
     console.log('User can guess if I went to Seattle U or not'); 
 }
@@ -31,12 +31,12 @@ whatSchool();
 
 // second question
 function doYouSkyDive(){
-    var workLife = prompt('Did you know I was a skydive instructor?? ');
+    var workLife = prompt('Did you know I use to be a skydive instructor?? ');
 
 if(workLife.toUpperCase() === 'No' || workLife.toUpperCase() === 'N'){        
-    alert('Sike! I\'m afraid of heights and dark water which you could encounter both on that type of work life style. Am I right?! ');
+    alert('Just kidding, I had a normal job, Wouldn\'t that be cool if I was!');
 } else {
-    alert('I had a normal job, Wouldn\'t that be cool if I was!'); 
+    alert('True! I\'m afraid of heights and dark water which you could encounter both on that type of work life style. Am I right?! Just kidding, I had a normal job, Wouldn\'t that be cool if I was!'); 
     numberCorrect++  
 } 
 console.log('User guesses if I was a skydive instructor or not');
@@ -45,10 +45,10 @@ doYouSkyDive();
 
 // third question
 function pastJobHistory(){
-    var workHistory = prompt('Wanna know what my past job was and what I\'m doing now? ');
+    var workHistory = prompt('Wanna know what you last job was? ');
 
     if(workHistory.toLowerCase() === 'yes' || workHistory.toLowerCase() === 'y'){
-        alert('Great, I worked at a Salon on Capitol hill for 8+ years and now going to school at Code Fellows to become a Software Developer!');
+        alert('Great! I worked at a Salon on Capitol hill for 8+ years but now going to school at Code Fellows to become a Software Developer!');
         numberCorrect++
     } else {
         alert('Well I\'ll tell you anyways, I worked at a salon in Seattle and now I\'m in school at Code Fellows to become a Software Developer!');
@@ -83,13 +83,13 @@ function learnNewLanguage(){
 
     if(funLanguageFact.toLowerCase() === 'y' || funLanguageFact.toLowerCase() === 'yes'){
         
-        alert('Great! My boyfriend is from Gambia, West Africa so I am learning his language which is Wolof so that I can better communicate with his family next time we visit!' + ' Well ' + userName + ',' + ' Thanks for visiting and getting to know me better, Have a nice day!');
+        alert('Great! ' + userName + ' My boyfriend is from Gambia, West Africa so I am learning his fluent language which is Wolof so that I can better communicate with his family next time we visit!' + ' Don\'t worry ' + userName + ' only a few more questions!');
         numberCorrect++
         console.log('If yes, the user will find out what language I am learning');
     
     } else if(funLanguageFact.toUpperCase() == 'n' || funLanguageFact.toUpperCase() == 'no'){
     
-        alert('But I thought you wanted to get to know me? ' + 'Well thanks anyways for coming by ' + userName + '!' + ' See you around!');
+        alert('But I thought you wanted to get to know me? ' + userName + 'I guess you will have to answer a few more questions!');
     
         console.log('If no, then I am disappointed and say goodbye');
     
@@ -108,12 +108,12 @@ for (var i = 0; i < 4; i++) {
     alert('Nope, too low try again!');
   }
     else if (parseInt(numberGuess) === correctAgeNumber) {
-    alert('That is correct 28 years!');
+    alert('That is correct 28 years...that\s how old I am...shhhh!');
     numberCorrect++
     break;
    }
 if (i === 3){
-    alert('Aww shucks outta chances! ' + correctAgeNumber + ' is the correct number');
+    alert('Aww shucks outta chances! ' + correctAgeNumber + ' is the correct number!');
 }
 }
 }
@@ -140,7 +140,7 @@ function favoriteIceCreamFlavor(){
             userAnswer = flavorQuestion
             i++ 
             console.log(i);
-            alert('Nope! ' + userAnswer + ' is incorrect but still delicious');   
+            alert('Nope! ' + userAnswer + ' is incorrect but probably still delicious...because it\'s ice cream duhhh!');   
         }        
     }
     if ( i === 7){
@@ -153,9 +153,9 @@ favoriteIceCreamFlavor();
 // closing question
 function howManyQuestionsCorrect(){
     if (numberCorrect > 5) {
-        alert(userName + ', thanks for visiting and getting to know me! You scored ' + numberCorrect + ' out of 7! Have a great day!') 
+        alert(userName + ', thanks for visiting and getting to know me! Good job! You scored ' + numberCorrect + ' out of 7! Have a great day!') 
     } else {
-        alert(userName + ', thanks for visiting but you only scored ' + numberCorrect + ' out of 7! Have a great day!');
+        alert(userName + ', thanks for visiting but you only scored ' + numberCorrect + ' out of 7! Ouch! Have a great day!');
     }
 }
 howManyQuestionsCorrect();
