@@ -122,7 +122,7 @@ guessSeattleQuestion();
 
 // array favorite flavor question
 
-var correctFlavor = ['chocolate peanut butter', ' neapolitan', ' cookie dough '];
+var correctFlavor = ['chocolate peanut butter', ' neapolitan', ' cookie dough'];
 var userAnswer = '';
 var i = 1;
 function favoriteIceCreamFlavor(){
