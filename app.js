@@ -112,7 +112,7 @@ for (var i = 0; i < 4; i++) {
     numberCorrect++
     break;
    }
-if (i === 3 ){
+if (i === 3){
     alert('Aww shucks outta chances! ' + correctAgeNumber + ' is the correct number');
 }
 }
@@ -122,11 +122,11 @@ guessSeattleQuestion();
 
 // array favorite flavor question
 
-var correctFlavor = ['chocolate peanut butter', 'neapolitan', 'cookie dough'];
+var correctFlavor = ['chocolate peanut butter', ' neapolitan', ' cookie dough '];
 var userAnswer = '';
 var i = 1;
 function favoriteIceCreamFlavor(){
-    while (i < 6){
+    while (i < 7){
         var flavorQuestion = prompt('What are my favorite flavors of ice cream?');
         for (var j = 0; j < correctFlavor.length; j++) {
             if (flavorQuestion.toLowerCase() === correctFlavor[j]) {
@@ -136,15 +136,15 @@ function favoriteIceCreamFlavor(){
                break;
             } 
         }
-        if (i < 6){
+        if (i < 7){
             userAnswer = flavorQuestion
             i++ 
             console.log(i);
             alert('Nope! ' + userAnswer + ' is incorrect but still delicious');   
         }        
     }
-    if ( i === 6){
-        alert('You\'re out of attempts, here are all the correct answers chocolate peanut butter, neapolitan, cookie dough!');
+    if ( i === 7){
+        alert('You\'re out of attempts, here are all the correct answers ' + correctFlavor );
     }
     
 }
