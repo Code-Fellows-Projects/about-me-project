@@ -1,17 +1,16 @@
 'use strict'
 
 var numberCorrect = 0
-// greeting question
+
 var userName = prompt('Hi there, welcome to my webpage! What is your name?')
 function askName(){
 
-console.log('The user\'s name: ' + userName);
+
 
 alert('It\'s lovely to meet you, ' + userName + '!');
 }
 askName();
 
-// first question
 
 function whatSchool(){
     var whichSchool = prompt( userName + ', Lets play a guessing game to get to know me better! Do you think I went to Seattle University?');
@@ -24,12 +23,11 @@ function whatSchool(){
     
       alert('I did, but only for one year! ');
     }
-    console.log('User can guess if I went to Seattle U or not'); 
+    
 }
 whatSchool();
 
 
-// second question
 function doYouSkyDive(){
     var workLife = prompt('Did you know I use to be a skydive instructor?? ');
 
@@ -39,11 +37,11 @@ if(workLife.toUpperCase() === 'No' || workLife.toUpperCase() === 'N'){
     alert('True! I\'m afraid of heights and dark water which you could encounter both on that type of work life style. Am I right?! Just kidding, I had a normal job, Wouldn\'t that be cool if I was!'); 
     numberCorrect++  
 } 
-console.log('User guesses if I was a skydive instructor or not');
+
 }
 doYouSkyDive();
 
-// third question
+
 function pastJobHistory(){
     var workHistory = prompt('Wanna know what you last job was? ');
 
@@ -53,11 +51,11 @@ function pastJobHistory(){
     } else {
         alert('Well I\'ll tell you anyways, I worked at a salon in Seattle and now I\'m in school at Code Fellows to become a Software Developer!');
     }
-    console.log('User finds out past work history plus current schooling');
+    
 }
 pastJobHistory();
 
-// forth question
+
 function futureGoals(){
     var lifeGoals = prompt('Id love to share with you about my future goals, think I\'ll make a good Software Developer?');
 
@@ -65,19 +63,17 @@ function futureGoals(){
     
         alert('Aww thats sweet that you think so ' + userName + ', Me too! fingers crossed I make it through!');
         numberCorrect++
-    
-        console.log('If yes they learn about my future goals in a nice way');
-    
+        
+
     } else if(lifeGoals.toLowerCase() === 'n' || lifeGoals.toLowerCase() === 'no') {
     
         alert('Well ' + userName + ', I guess I will just have to prove you wrong!');
     
-        console.log('If no user gets message about proving them wrong');
     }
 }
 futureGoals();
 
-// fifth question
+
 function learnNewLanguage(){
     var funLanguageFact = prompt('I\'m in the beginning of learning a new language, Wanna know what it is?');
 
@@ -85,18 +81,19 @@ function learnNewLanguage(){
         
         alert('Great! ' + userName + ' My boyfriend is from Gambia, West Africa so I am learning his fluent language which is Wolof so that I can better communicate with his family next time we visit!' + ' Don\'t worry ' + userName + ' only a few more questions!');
         numberCorrect++
-        console.log('If yes, the user will find out what language I am learning');
+        
     
     } else if(funLanguageFact.toUpperCase() == 'n' || funLanguageFact.toUpperCase() == 'no'){
     
         alert('But I thought you wanted to get to know me? ' + userName + 'I guess you will have to answer a few more questions!');
     
-        console.log('If no, then I am disappointed and say goodbye');
+        
     
     }
 }
 learnNewLanguage();
-// guess a number question
+
+
 function guessSeattleQuestion(){
     var correctAgeNumber = 28;
 for (var i = 0; i < 4; i++) {
@@ -120,9 +117,8 @@ if (i === 3){
 guessSeattleQuestion();
 
 
-// array favorite flavor question
 
-var correctFlavor = ['chocolate peanut butter', ' neapolitan', ' cookie dough'];
+var correctFlavor = ['chocolate peanut butter', 'neapolitan', 'cookie dough'];
 var userAnswer = '';
 var i = 1;
 function favoriteIceCreamFlavor(){
@@ -144,13 +140,14 @@ function favoriteIceCreamFlavor(){
         }        
     }
     if ( i === 7){
-        alert('You\'re out of attempts, here are all the correct answers ' + correctFlavor );
+        alert('You\'re out of attempts, here are all the correct answers ' + correctFlavor);
     }
     
 }
 favoriteIceCreamFlavor();
 
-// closing question
+
+
 function howManyQuestionsCorrect(){
     if (numberCorrect > 5) {
         alert(userName + ', thanks for visiting and getting to know me! Good job! You scored ' + numberCorrect + ' out of 7! Have a great day!') 
@@ -161,11 +158,3 @@ function howManyQuestionsCorrect(){
 howManyQuestionsCorrect();
 
 
-
-// questions to ask:
-// what school did i go to
-// what did i do for work
-// what is my past work experience
-// what are my goals
-// what language do i want to learn
- 
